@@ -1,0 +1,249 @@
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Header */
+.header {
+    width: 100%;
+    background: #ffffff;
+    padding: 20px 0;
+    position: relative;
+    z-index: 10;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo */
+.logo {
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 700;
+    color: #222222;
+}
+
+.logo span {
+    color: #e67e22;
+}
+
+/* Navigation */
+.navigation {
+    display: flex;
+    gap: 30px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #333333;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.navigation a:hover {
+    color: #e67e22;
+}
+
+/* Hero Section */
+.hero {
+    min-height: 650px;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    background-image: url("https://www.w3schools.com/w3images/ocean.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Dark Overlay */
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+}
+
+/* Hero Content */
+.hero-content {
+    position: relative;
+    z-index: 2;
+
+    width: 90%;
+    max-width: 800px;
+
+    padding: 50px 20px;
+}
+
+.subtitle {
+    font-size: 13px;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    color: #f0a35e;
+}
+
+/* Main Heading */
+.hero-content h1 {
+    font-size: 55px;
+    line-height: 1.2;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.hero-content h1 span {
+    color: #e67e22;
+    display: block;
+}
+
+/* Description */
+.description {
+    font-size: 16px;
+    font-weight: 300;
+    max-width: 650px;
+    margin: 0 auto 35px;
+    color: #eeeeee;
+}
+
+/* Button */
+.button {
+    display: inline-block;
+    text-decoration: none;
+
+    padding: 14px 35px;
+
+    background: #e67e22;
+    color: #ffffff;
+
+    border-radius: 5px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background: #ffffff;
+    color: #e67e22;
+    transform: translateY(-3px);
+}
+
+/* About Section */
+.about {
+    background: #ffffff;
+    color: #333333;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.about h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #222222;
+}
+
+.about p {
+    max-width: 700px;
+    margin: auto;
+    font-size: 15px;
+    color: #666666;
+}
+
+/* Footer */
+.footer {
+    background: #171717;
+    text-align: center;
+    padding: 25px 15px;
+    color: #bbbbbb;
+    font-size: 13px;
+}
+
+/* Tablet Responsive */
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navigation {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        min-height: 550px;
+    }
+
+    .hero-content h1 {
+        font-size: 40px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+}
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .navigation {
+        gap: 12px;
+    }
+
+    .navigation a {
+        font-size: 12px;
+    }
+
+    .hero {
+        min-height: 500px;
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .subtitle {
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
+
+    .description {
+        font-size: 13px;
+    }
+
+    .about h2 {
+        font-size: 26px;
+    }
+}
